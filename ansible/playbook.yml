@@ -49,20 +49,20 @@
         dest: /srv/checkout
         clone: true
 
-#    - name: removing an image 
-#      community.docker.docker_image:
-#        name: clock
-#        tag: v2
-#        state: absent 
-#
-#
-#    - name: Build an image 
-#      community.docker.docker_image:
-#        build:
-#          path: /root/jenkinslabtest/app
-#        name: clock
-#        tag: v2
-#        push: false
-#        source: build
+    - name: removing an image 
+      community.docker.docker_image:
+        name: clock
+        tag: v2
+        state: absent 
+
+
+    - name: Build an image 
+      community.docker.docker_image:
+        build:
+          path: /root/jenkinslabtest/app
+        name: clock
+        tag: v2
+        push: false
+     source: build
 #
 #
